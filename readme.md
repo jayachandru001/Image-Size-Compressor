@@ -1,3 +1,4 @@
+# **Image Quality Reducer**
 # **Steps to Follow**
 
 ## Create Virtual environment
