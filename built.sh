@@ -7,3 +7,4 @@ virtualenv ivenv
 source ivenv/bin/activate
 pip install -r requirements.txt
 pip install --upgrade pip
+pip install gunicorn
