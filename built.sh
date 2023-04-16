@@ -11,3 +11,4 @@ pip install -r requirements.txt
 
 export FLASK_APP = img_compressor.py
 export FLASK_ENV = development
+export flask run
