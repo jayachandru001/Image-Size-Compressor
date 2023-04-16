@@ -1,0 +1,77 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: larger;
+  }
+  
+  h1 {
+    text-align: center;
+    margin: 1em 0;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+  }
+  
+  label {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+  }
+  
+  input[type="text"],
+  input[type="file"],
+  select[type ="option"] {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  input[type="submit"] {
+    padding: 0.5em;
+    font-size: medium;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #d400ff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #a7d4ff;
+  }
+  
+  .result {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1em 0;
+  }
+  
+  .result img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .result a {
+    margin-top: 1em;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    border: none;
+    background-color: #2ecc71;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  .result a:hover {
+    background-color: #27ae60;
+  }
+  

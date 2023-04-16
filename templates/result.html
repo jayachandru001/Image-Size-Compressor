@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression Result</title>
+    <style>
+        body{
+            position: center;
+            margin: 0;
+            text-align: center;
+        }
+        .download-btn {
+          background-color: #6459f7;
+          color: white;
+          border: none;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 8px;
+        }
+  
+        .download-btn:hover {
+          background-color: #a08aff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Image Compression Result</h1>
+    <p>Your image has been compressed successfully!</p>
+    <p>Download the compressed image below:</p>
+    <!--    <a href="{{ url_for('static', filename=filename) }}">{{ filename}}</a>
+    <a href="{{ url_for('download', filename=filename) }}" class="btn btn-primary">Download</a> -->
+    <a href="{{ url_for('download', filename=filename) }}" class="download-btn" download>Download Compressed Image</a>
+
+</body>
+</html>
+
+
+

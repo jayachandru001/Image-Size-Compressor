@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Compressor</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesheets/style.css') }}">
+  </head>
+  <body>
+    <h1>Image Compressor</h1>
+    <form method="POST" enctype="multipart/form-data" action="{{ url_for('index') }}">
+      <div>
+        <label for="file">Choose a file:</label>
+        <input type="file" id="file" name="file" accept="image/*" required>
+      </div>
+      <div>
+        <label for="size">Desired size:</label>
+        <input type="text" id="size" name="size" placeholder="Enter size (e.g. 500)" required>
+        <select type="option" name="option">
+            <option value="KB">KB</option>
+            <option value="MB">MB</option>
+            <option value="GB">GB</option>
+          </select>
+      </div>
+      <div>
+        <input type="submit" value="Compress">
+      </div>
+    </form>
+  </body>
+</html>
